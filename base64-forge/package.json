@@ -1,7 +1,7 @@
 {
-  "name": "@sovereign/base64-forge-mcp",
+  "name": "base64-forge-mcp",
   "version": "1.0.0",
-  "description": "MCP server for Base64, URL, and HTML encoding/decoding.",
+  "description": "MCP server for Base64, URL, and HTML encoding/decoding",
   "main": "dist/index.js",
   "bin": {
     "base64-forge-mcp": "dist/index.js"
@@ -27,5 +27,18 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "bugs": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers/issues"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }

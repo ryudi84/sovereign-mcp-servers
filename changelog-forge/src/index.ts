@@ -125,14 +125,22 @@ server.tool(
   }
 );
 
-// === Start Server ===
+// === Smithery sandbox support ===
+export function createSandboxServer() {
+  return server;
+}
 
+// === Start Server ===
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
 }
 
-main().catch((error) => {
-  console.error("Fatal error:", error);
-  process.exit(1);
-});
+// Only auto-start when run directly
+const isDirectRun = !process.env.SMITHERY_SCAN;
+if (isDirectRun) {
+  main().catch((error) => {
+    console.error("Fatal error:", error);
+    process.exit(1);
+  });
+}

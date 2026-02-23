@@ -1,7 +1,7 @@
 {
-  "name": "@sovereign/regex-lab-mcp",
+  "name": "regex-lab-mcp",
   "version": "1.0.0",
-  "description": "MCP server for regex testing, matching, replacing, and validation.",
+  "description": "MCP server for regex testing, matching, replacing, and validation",
   "main": "dist/index.js",
   "bin": {
     "regex-lab-mcp": "dist/index.js"
@@ -27,5 +27,18 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "bugs": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers/issues"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@sovereign/shadow-forge-mcp",
+  "name": "shadow-forge-mcp",
   "version": "1.0.0",
-  "description": "MCP server for generating CSS box-shadow values with presets and custom layers.",
+  "description": "MCP server for CSS box-shadow generation",
   "main": "dist/index.js",
   "bin": {
     "shadow-forge-mcp": "dist/index.js"
@@ -27,5 +27,18 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "bugs": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers/issues"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }

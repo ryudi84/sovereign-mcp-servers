@@ -1,0 +1,20 @@
+{
+  "qualifiedName": "ryudi84/json-forge-mcp",
+  "displayName": "JSON Forge MCP Server",
+  "description": "MCP server for JSON processing — format, validate, diff, convert (YAML/CSV/XML/TOML/TS), minify, query, analyze",
+  "iconUrl": "",
+  "tools": [
+    {"name": "format_json", "description": "Pretty-print JSON with 2-space indentation"},
+    {"name": "validate_json", "description": "Validate JSON and return structure analysis"},
+    {"name": "diff_json", "description": "Deep diff two JSON objects"},
+    {"name": "convert_json", "description": "Convert JSON to YAML, CSV, XML, TOML, or TypeScript interface"},
+    {"name": "minify_json", "description": "Minify JSON by removing whitespace"},
+    {"name": "query_json", "description": "Query JSON with dot-notation path"},
+    {"name": "analyze_json", "description": "Analyze JSON structure, depth, key count, and types"}
+  ],
+  "resources": [],
+  "prompts": [],
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT"
+}
