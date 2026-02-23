@@ -1,8 +1,10 @@
 # Sovereign MCP Servers
 
-**11 MCP servers. 33 tools. Built for AI agents.**
+**16 MCP servers. 51 tools. Built for AI agents.**
 
 A collection of Model Context Protocol servers that give AI assistants (Claude, Cursor, Windsurf, Cline, ChatGPT) powerful utility tools for everyday development tasks.
+
+Zero external API keys. Zero configuration. Just install and use.
 
 ## Servers
 
@@ -10,9 +12,14 @@ A collection of Model Context Protocol servers that give AI assistants (Claude, 
 |--------|-------|-------------|
 | **json-forge** | 7 | Format, validate, diff, convert (YAML/CSV/XML/TOML/TS), minify, query JSON |
 | **base64-forge** | 6 | Encode/decode Base64, URL, and HTML entities |
+| **uuid-forge** | 5 | Generate UUID v4/v7, ULID, nanoid, parse UUIDs |
+| **markdown-forge** | 4 | Generate tables, TOC, badges, convert to HTML |
 | **regex-lab** | 3 | Test, replace, and validate regular expressions |
 | **hash-forge** | 3 | Hash text (MD5/SHA), generate HMAC, compare hashes |
 | **timestamp-forge** | 3 | Current time, Unix conversion, date diff calculations |
+| **lorem-forge** | 3 | Lorem ipsum, fake data (names/emails/phones), mock JSON |
+| **cron-forge** | 3 | Explain cron expressions, next runs, validate syntax |
+| **changelog-forge** | 3 | Parse conventional commits, generate changelogs, bump versions |
 | **jwt-forge** | 2 | Decode JWT tokens, validate format, check expiry |
 | **meta-forge** | 2 | Generate HTML meta tags (OG/Twitter), run SEO checks |
 | **color-forge** | 2 | Generate color palettes, export to CSS/Tailwind/SCSS/JSON |
