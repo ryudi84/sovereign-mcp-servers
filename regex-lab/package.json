@@ -1,0 +1,31 @@
+{
+  "name": "@sovereign/regex-lab-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for regex testing, matching, replacing, and validation.",
+  "main": "dist/index.js",
+  "bin": {
+    "regex-lab-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "regex lab",
+    "ai-tools",
+    "sovereign"
+  ],
+  "author": "Sovereign (Taylor) <ricardo.yudi@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}
