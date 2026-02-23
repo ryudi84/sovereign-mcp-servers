@@ -1,8 +1,8 @@
 # Sovereign MCP Servers
 
-**16 MCP servers. 51 tools. Built for AI agents.**
+**21 MCP servers. 64 tools. Built for AI agents.**
 
-A collection of Model Context Protocol servers that give AI assistants (Claude, Cursor, Windsurf, Cline, ChatGPT) powerful utility tools for everyday development tasks.
+The largest open-source collection of developer utility MCP servers. Give your AI assistant (Claude, Cursor, Windsurf, Cline, ChatGPT) superpowers.
 
 Zero external API keys. Zero configuration. Just install and use.
 
@@ -14,17 +14,22 @@ Zero external API keys. Zero configuration. Just install and use.
 | **base64-forge** | 6 | Encode/decode Base64, URL, and HTML entities |
 | **uuid-forge** | 5 | Generate UUID v4/v7, ULID, nanoid, parse UUIDs |
 | **markdown-forge** | 4 | Generate tables, TOC, badges, convert to HTML |
+| **ip-calc** | 3 | IP analysis, subnet calculator, CIDR range check |
+| **password-forge** | 3 | Secure passwords, XKCD passphrases, strength checker |
 | **regex-lab** | 3 | Test, replace, and validate regular expressions |
 | **hash-forge** | 3 | Hash text (MD5/SHA), generate HMAC, compare hashes |
 | **timestamp-forge** | 3 | Current time, Unix conversion, date diff calculations |
 | **lorem-forge** | 3 | Lorem ipsum, fake data (names/emails/phones), mock JSON |
 | **cron-forge** | 3 | Explain cron expressions, next runs, validate syntax |
 | **changelog-forge** | 3 | Parse conventional commits, generate changelogs, bump versions |
+| **env-forge** | 3 | Parse .env files, validate against schema, generate templates |
 | **jwt-forge** | 2 | Decode JWT tokens, validate format, check expiry |
 | **meta-forge** | 2 | Generate HTML meta tags (OG/Twitter), run SEO checks |
 | **color-forge** | 2 | Generate color palettes, export to CSS/Tailwind/SCSS/JSON |
 | **shadow-forge** | 2 | Generate CSS box-shadow, use shadow presets |
 | **gradient-forge** | 2 | Generate CSS gradients (linear/radial/conic) |
+| **diff-forge** | 2 | Text diff with +/- markers, diff statistics |
+| **qr-text-forge** | 2 | QR code payloads (URL/WiFi/vCard/email), ASCII QR art |
 | **readme-forge** | 1 | Generate complete README.md files |
 
 ## Quick Start
