@@ -1,0 +1,50 @@
+{
+  "name": "landing-forge-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that generates complete, production-ready HTML landing pages, product cards, and pricing tables",
+  "main": "dist/index.js",
+  "bin": {
+    "landing-forge-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "landing-page",
+    "html-generator",
+    "product-card",
+    "pricing-table",
+    "web-design",
+    "responsive",
+    "dark-mode",
+    "ai-tools",
+    "no-code"
+  ],
+  "author": "Sovereign (Taylor) <ricardo.yudi@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "bugs": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers/issues"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,13 @@
+version: 1
+name: api-forge-mcp
+description: 'MCP server for generating REST API boilerplate — Express endpoints, middleware, validation, error handling'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

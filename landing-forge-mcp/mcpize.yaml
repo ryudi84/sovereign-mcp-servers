@@ -1,0 +1,13 @@
+version: 1
+name: landing-forge-mcp
+description: 'MCP server that generates complete, production-ready HTML landing pages, product cards, and pricing tables'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js
