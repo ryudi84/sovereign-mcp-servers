@@ -1,0 +1,13 @@
+version: 1
+name: json-forge-mcp
+description: 'MCP server for JSON processing — format, validate, diff, convert, minify, query, analyze'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

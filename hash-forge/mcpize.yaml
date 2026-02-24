@@ -1,0 +1,13 @@
+version: 1
+name: hash-forge-mcp
+description: 'MCP server for hashing text (MD5/SHA), generating HMAC, comparing hashes'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

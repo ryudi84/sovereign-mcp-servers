@@ -1,0 +1,13 @@
+version: 1
+name: uuid-forge-mcp
+description: 'MCP server for UUID v4/v7, ULID, and nanoid generation'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

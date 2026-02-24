@@ -1,0 +1,13 @@
+version: 1
+name: base64-forge-mcp
+description: 'MCP server for Base64, URL, and HTML entity encoding/decoding'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

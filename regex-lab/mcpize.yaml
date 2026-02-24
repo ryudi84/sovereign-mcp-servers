@@ -1,0 +1,13 @@
+version: 1
+name: regex-lab-mcp
+description: 'MCP server for testing, replacing, and validating regular expressions'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

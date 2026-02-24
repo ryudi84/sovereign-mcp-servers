@@ -1,0 +1,13 @@
+version: 1
+name: timestamp-forge-mcp
+description: 'MCP server for time conversion, Unix timestamps, and date calculations'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js
