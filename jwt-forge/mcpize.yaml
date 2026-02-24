@@ -1,0 +1,13 @@
+version: 1
+name: jwt-forge-mcp
+description: 'MCP server for decoding JWT tokens, validating format, and checking expiry times.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

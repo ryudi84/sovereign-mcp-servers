@@ -1,0 +1,13 @@
+version: 1
+name: color-forge-mcp
+description: 'MCP server for generating color palettes and exporting to CSS, Tailwind, SCSS, and JSON formats.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

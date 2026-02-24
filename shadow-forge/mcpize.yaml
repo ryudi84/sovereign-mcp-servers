@@ -1,0 +1,13 @@
+version: 1
+name: shadow-forge-mcp
+description: 'MCP server for generating CSS box-shadow values with presets and custom configurations.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js
