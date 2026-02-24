@@ -1,0 +1,49 @@
+{
+  "name": "mcp-forge-mcp",
+  "version": "1.0.0",
+  "description": "Meta MCP server that generates other MCP servers — the factory that builds factories",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-forge-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-forge",
+    "meta-tool",
+    "code-generator",
+    "mcp-server-generator",
+    "ai-tools",
+    "typescript",
+    "scaffold",
+    "model-context-protocol"
+  ],
+  "author": "Sovereign (Taylor) <ricardo.yudi@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "bugs": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers/issues"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}

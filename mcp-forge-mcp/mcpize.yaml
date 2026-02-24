@@ -1,0 +1,13 @@
+version: 1
+name: mcp-forge-mcp
+description: 'Meta MCP server that generates other MCP servers — the factory that builds factories'
+runtime: typescript
+entry: src/index.ts
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js
