@@ -1,0 +1,13 @@
+version: 1
+name: qr-text-forge-mcp
+description: 'MCP server for generating QR codes from text, URLs, and structured data as ASCII art.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

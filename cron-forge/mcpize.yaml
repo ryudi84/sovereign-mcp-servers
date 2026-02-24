@@ -1,0 +1,13 @@
+version: 1
+name: cron-forge-mcp
+description: 'MCP server for cron expression parsing, validation, human-readable explanation, and next run calculations.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

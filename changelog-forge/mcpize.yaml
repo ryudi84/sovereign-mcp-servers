@@ -1,0 +1,13 @@
+version: 1
+name: changelog-forge-mcp
+description: 'MCP server for generating changelogs from git commits — conventional commits, keep-a-changelog format, semantic versioning.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

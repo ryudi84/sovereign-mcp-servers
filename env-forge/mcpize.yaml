@@ -1,0 +1,13 @@
+version: 1
+name: env-forge-mcp
+description: 'MCP server for .env file management — parse, validate, compare, merge, and generate environment configs.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

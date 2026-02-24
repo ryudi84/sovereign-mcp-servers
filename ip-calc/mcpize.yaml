@@ -1,0 +1,13 @@
+version: 1
+name: ip-calc-mcp
+description: 'MCP server for IP address calculations — subnet masks, CIDR notation, network ranges, IP validation.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

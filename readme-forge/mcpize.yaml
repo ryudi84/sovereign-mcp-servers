@@ -1,0 +1,13 @@
+version: 1
+name: readme-forge-mcp
+description: 'MCP server for generating professional README.md files — badges, sections, table of contents, auto-formatting.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

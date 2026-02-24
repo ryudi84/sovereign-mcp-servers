@@ -1,0 +1,13 @@
+version: 1
+name: diff-forge-mcp
+description: 'MCP server for text diffing — compare strings, find changes, generate unified diffs, patch text.'
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js
