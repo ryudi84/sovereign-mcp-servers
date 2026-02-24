@@ -34,18 +34,29 @@ Zero external API keys. Zero configuration. Just install and use.
 
 ## Quick Start
 
-Each server runs via stdio transport. Add to your MCP config:
+### Via npx (easiest)
+
+Add to your Claude Desktop config (`claude_desktop_config.json`):
 
 ```json
 {
   "mcpServers": {
-    "json-forge": {
-      "command": "node",
-      "args": ["/path/to/sovereign-mcp-servers/json-forge/dist/index.js"]
-    }
+    "json-forge": { "command": "npx", "args": ["json-forge-mcp"] },
+    "hash-forge": { "command": "npx", "args": ["hash-forge-mcp"] },
+    "regex-lab": { "command": "npx", "args": ["regex-lab-mcp"] }
   }
 }
 ```
+
+All 21 servers are on npm: `npx <server-name>-mcp`
+
+### Via MCPize (cloud-hosted)
+
+13 servers available on [MCPize](https://mcpize.com) — no install needed:
+- https://mcpize.com/mcp/json-forge-mcp
+- https://mcpize.com/mcp/password-forge-mcp
+- https://mcpize.com/mcp/cron-forge-mcp
+- And 10 more...
 
 ## Build All
 
