@@ -5,9 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-**MCP server for CSS — generate flexbox, grid, animations, media queries, gradients, shadows**
+**CSS generator in your IDE. Flexbox, Grid, animations, media queries.**
 
-A powerful MCP server with 4 tools.
+Stop memorizing CSS properties. Generate flexbox layouts, CSS grid configs, animations with keyframes, and responsive media queries — all with the right parameters.
 
 ## Quick Start
 
@@ -39,6 +39,32 @@ Add to your MCP configuration:
 | `generate_animation` | Generate CSS animation with keyframes |
 | `generate_media_queries` | Generate responsive CSS media queries for common breakpoints |
 
+## Examples
+
+**Flexbox layout:**
+```json
+{
+  "tool": "generate_flexbox",
+  "arguments": {"direction": "row", "justify": "space-between", "align": "center", "gap": "16px"}
+}
+```
+
+**CSS Grid:**
+```json
+{
+  "tool": "generate_grid",
+  "arguments": {"columns": "repeat(3, 1fr)", "gap": "24px"}
+}
+```
+
+**Animation:**
+```json
+{
+  "tool": "generate_animation",
+  "arguments": {"name": "fadeIn", "type": "fade-in", "duration": "0.3s"}
+}
+```
+
 ## Build from Source
 
 ```bash
@@ -50,7 +76,7 @@ npm start
 
 ## Part of the Sovereign MCP Suite
 
-This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+This is one of **34 MCP servers** with **121 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
 
 | Category | Servers |
 |----------|---------|

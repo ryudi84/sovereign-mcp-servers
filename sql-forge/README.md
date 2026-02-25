@@ -5,9 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-**MCP server for SQL — query builder, syntax validator, schema generator, query formatter, common patterns**
+**SQL toolkit in your IDE. Build queries, format SQL, validate syntax.**
 
-A powerful MCP server with 5 tools.
+Stop writing SQL from scratch. Build SELECT/CREATE queries, format messy SQL, validate syntax, and get common patterns (pagination, upsert, CTEs, window functions) — all from your AI assistant.
 
 ## Quick Start
 
@@ -40,6 +40,32 @@ Add to your MCP configuration:
 | `build_create_table` | Generate CREATE TABLE SQL from column definitions |
 | `sql_patterns` | Get common SQL patterns (pagination, upsert, CTE, window functions, pivot) |
 
+## Examples
+
+**Format SQL:**
+```json
+{
+  "tool": "format_sql",
+  "arguments": {"sql": "select * from users where age > 18 order by name"}
+}
+```
+
+**Build SELECT:**
+```json
+{
+  "tool": "build_select",
+  "arguments": {"table": "users", "columns": ["name", "email"], "where": "active = true", "limit": 10}
+}
+```
+
+**SQL patterns:**
+```json
+{
+  "tool": "sql_patterns",
+  "arguments": {"pattern": "pagination"}
+}
+```
+
 ## Build from Source
 
 ```bash
@@ -51,7 +77,7 @@ npm start
 
 ## Part of the Sovereign MCP Suite
 
-This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+This is one of **34 MCP servers** with **121 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
 
 | Category | Servers |
 |----------|---------|

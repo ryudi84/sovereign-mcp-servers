@@ -57,7 +57,7 @@ npm start
 
 ## Part of the Sovereign MCP Suite
 
-This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+This is one of **34 MCP servers** with **121 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
 
 | Category | Servers |
 |----------|---------|

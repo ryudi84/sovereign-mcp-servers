@@ -5,9 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-**MCP server for Git — generate commands, commit messages, .gitignore files, branch names, changelogs**
+**Git workflow toolkit. Commit messages, .gitignore, branch names, commands.**
 
-A powerful MCP server with 4 tools.
+Generate conventional commit messages, .gitignore files for any stack, branch names from descriptions, and complex Git commands (squash, rebase, cherry-pick) — all from your IDE.
 
 ## Quick Start
 
@@ -39,6 +39,32 @@ Add to your MCP configuration:
 | `generate_branch_name` | Generate Git branch names following conventions |
 | `git_command` | Generate Git commands for common operations (squash, rebase, cherry-pick, etc.) |
 
+## Examples
+
+**Commit message:**
+```json
+{
+  "tool": "generate_commit_message",
+  "arguments": {"changes": "add user authentication with JWT", "type": "feat", "scope": "auth"}
+}
+```
+
+**Generate .gitignore:**
+```json
+{
+  "tool": "generate_gitignore",
+  "arguments": {"types": ["node", "python"]}
+}
+```
+
+**Git command:**
+```json
+{
+  "tool": "git_command",
+  "arguments": {"operation": "squash", "args": "5"}
+}
+```
+
 ## Build from Source
 
 ```bash
@@ -50,7 +76,7 @@ npm start
 
 ## Part of the Sovereign MCP Suite
 
-This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+This is one of **34 MCP servers** with **121 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
 
 | Category | Servers |
 |----------|---------|

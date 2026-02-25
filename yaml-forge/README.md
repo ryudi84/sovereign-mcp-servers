@@ -5,9 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-**MCP server for YAML — format, validate, convert between JSON/YAML, merge files, query paths**
+**YAML toolkit in your IDE. Format, validate, convert, generate templates.**
 
-A powerful MCP server with 5 tools.
+Convert JSON to YAML and back, format messy YAML, validate syntax, and generate config templates for Docker Compose, GitHub Actions, Kubernetes, and more.
 
 ## Quick Start
 
@@ -40,6 +40,32 @@ Add to your MCP configuration:
 | `validate_yaml` | Validate YAML syntax and report errors |
 | `yaml_template` | Generate YAML templates for common configs (docker-compose, github-actions, k8s) |
 
+## Examples
+
+**JSON to YAML:**
+```json
+{
+  "tool": "json_to_yaml",
+  "arguments": {"json_str": "{\"name\": \"app\", \"version\": \"1.0\"}"}
+}
+```
+
+**YAML template:**
+```json
+{
+  "tool": "yaml_template",
+  "arguments": {"template": "docker-compose"}
+}
+```
+
+**Validate YAML:**
+```json
+{
+  "tool": "validate_yaml",
+  "arguments": {"yaml_str": "name: app\nversion: 1.0"}
+}
+```
+
 ## Build from Source
 
 ```bash
@@ -51,7 +77,7 @@ npm start
 
 ## Part of the Sovereign MCP Suite
 
-This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+This is one of **34 MCP servers** with **121 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
 
 | Category | Servers |
 |----------|---------|

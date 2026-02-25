@@ -5,9 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-**MCP server for HTML — generate boilerplate, validate structure, minify, prettify, extract text**
+**HTML toolkit in your IDE. Boilerplate, minify, prettify, validate, meta tags.**
 
-A powerful MCP server with 5 tools.
+Generate HTML5 boilerplate with dark mode support, minify/prettify HTML, validate structure and accessibility, create complete meta tag sets (SEO + Open Graph + Twitter) — all from your editor.
 
 ## Quick Start
 
@@ -40,6 +40,32 @@ Add to your MCP configuration:
 | `validate_html` | Check HTML for common issues (unclosed tags, missing attributes, accessibility) |
 | `generate_meta_tags` | Generate complete meta tags (SEO, Open Graph, Twitter Card) |
 
+## Examples
+
+**Generate boilerplate:**
+```json
+{
+  "tool": "generate_boilerplate",
+  "arguments": {"title": "My App", "description": "A great app", "dark_mode": true}
+}
+```
+
+**Generate meta tags:**
+```json
+{
+  "tool": "generate_meta_tags",
+  "arguments": {"title": "My App", "description": "A great app", "type": "website"}
+}
+```
+
+**Validate HTML:**
+```json
+{
+  "tool": "validate_html",
+  "arguments": {"html": "<html><body><img src=\"photo.jpg\"></body></html>"}
+}
+```
+
 ## Build from Source
 
 ```bash
@@ -51,7 +77,7 @@ npm start
 
 ## Part of the Sovereign MCP Suite
 
-This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+This is one of **34 MCP servers** with **121 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
 
 | Category | Servers |
 |----------|---------|
