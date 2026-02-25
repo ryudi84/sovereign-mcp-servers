@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/markdown-forge-mcp",
+  "description": "Markdown processing, TOC generation, HTML conversion",
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github",
+    "subfolder": "markdown-forge"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "markdown-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

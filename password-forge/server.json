@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/password-forge-mcp",
+  "description": "Generate secure passwords with configurable rules and strength check",
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github",
+    "subfolder": "password-forge"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "password-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/regex-lab-mcp",
+  "description": "Test, explain, and generate regular expressions",
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github",
+    "subfolder": "regex-lab"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "regex-lab-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

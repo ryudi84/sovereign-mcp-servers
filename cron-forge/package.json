@@ -1,6 +1,6 @@
 {
   "name": "cron-forge-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for cron expression parsing, validation, human-readable explanation, and next run calculations.",
   "main": "dist/index.js",
   "bin": {

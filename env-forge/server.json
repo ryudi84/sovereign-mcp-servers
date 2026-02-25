@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/env-forge-mcp",
+  "description": "Parse, validate, and manage .env environment files",
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github",
+    "subfolder": "env-forge"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "env-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/timestamp-forge-mcp",
+  "description": "Unix/ISO timestamp conversion, timezone math, duration calc",
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github",
+    "subfolder": "timestamp-forge"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "timestamp-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
