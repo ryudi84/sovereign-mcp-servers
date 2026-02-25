@@ -1,7 +1,7 @@
 {
   "name": "sovereign-seo-analyzer-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for SEO analysis \u2014 check meta tags, heading hierarchy, link analysis, keyword density, robots.txt and sitemap generation.",
+  "version": "1.0.1",
+  "description": "MCP server for SEO analysis — check meta tags, heading hierarchy, link analysis, keyword density, robots.txt and sitemap generation.",
   "main": "dist/index.js",
   "bin": {
     "sovereign-seo-analyzer-mcp": "dist/index.js"

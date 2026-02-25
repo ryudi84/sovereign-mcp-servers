@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['regex-lab-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'regex-lab-mcp'] })
+  exampleConfig: {}

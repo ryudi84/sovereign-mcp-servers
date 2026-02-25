@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['jwt-forge-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'jwt-forge-mcp'] })
+  exampleConfig: {}

@@ -1,6 +1,6 @@
 {
   "name": "diff-forge-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "MCP server for computing text diffs, comparing strings, and generating unified diff output.",
   "main": "dist/index.js",
   "bin": {

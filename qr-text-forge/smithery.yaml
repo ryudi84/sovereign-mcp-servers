@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['qr-text-forge-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'qr-text-forge-mcp'] })
+  exampleConfig: {}

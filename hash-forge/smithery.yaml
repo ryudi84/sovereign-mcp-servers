@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['hash-forge-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'hash-forge-mcp'] })
+  exampleConfig: {}

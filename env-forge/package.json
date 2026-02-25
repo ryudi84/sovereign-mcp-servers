@@ -1,6 +1,6 @@
 {
   "name": "env-forge-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "MCP server for .env file validation, parsing, comparison, and generation. Every project uses .env files.",
   "main": "dist/index.js",
   "bin": {

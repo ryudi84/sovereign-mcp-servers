@@ -185,6 +185,11 @@ server.tool(
   }
 );
 
+// === Smithery sandbox support ===
+export function createSandboxServer() {
+  return server;
+}
+
 // === Start Server ===
 
 async function main() {
@@ -192,7 +197,11 @@ async function main() {
   await server.connect(transport);
 }
 
-main().catch((error) => {
-  console.error("Fatal error:", error);
-  process.exit(1);
-});
+// Only auto-start when run directly
+const isDirectRun = !process.env.SMITHERY_SCAN;
+if (isDirectRun) {
+  main().catch((error) => {
+    console.error("Fatal error:", error);
+    process.exit(1);
+  });
+}

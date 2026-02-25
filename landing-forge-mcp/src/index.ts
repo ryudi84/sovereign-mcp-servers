@@ -370,6 +370,11 @@ server.tool(
   }
 );
 
+// === Smithery sandbox support ===
+export function createSandboxServer() {
+  return server;
+}
+
 // === Start Server ===
 
 async function main(): Promise<void> {

@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['cron-forge-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'cron-forge-mcp'] })
+  exampleConfig: {}

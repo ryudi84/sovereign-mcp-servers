@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['uuid-forge-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'uuid-forge-mcp'] })
+  exampleConfig: {}

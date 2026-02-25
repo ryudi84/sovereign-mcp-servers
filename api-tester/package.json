@@ -1,7 +1,7 @@
 {
   "name": "sovereign-api-tester-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for API testing \u2014 make HTTP requests, test endpoints, generate cURL commands, create mock responses, health checks. Postman in your IDE.",
+  "version": "1.0.2",
+  "description": "MCP server for API testing — make HTTP requests, test endpoints, generate cURL commands, create mock responses, health checks. Postman in your IDE.",
   "main": "dist/index.js",
   "bin": {
     "sovereign-api-tester-mcp": "dist/index.js"

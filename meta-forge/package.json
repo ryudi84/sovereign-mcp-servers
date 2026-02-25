@@ -1,6 +1,6 @@
 {
   "name": "meta-forge-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "MCP server for SEO meta tag generation — title, description, Open Graph, Twitter Cards",
   "main": "dist/index.js",
   "bin": {

@@ -1,6 +1,6 @@
 {
   "name": "base64-forge-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "MCP server for Base64, URL, and HTML encoding/decoding",
   "main": "dist/index.js",
   "bin": {

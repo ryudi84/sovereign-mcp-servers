@@ -1,7 +1,7 @@
 {
   "name": "sovereign-code-quality-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for code quality analysis \u2014 cyclomatic complexity, duplicate detection, naming conventions, file metrics, refactoring suggestions.",
+  "version": "1.0.1",
+  "description": "MCP server for code quality analysis — cyclomatic complexity, duplicate detection, naming conventions, file metrics, refactoring suggestions.",
   "main": "dist/index.js",
   "bin": {
     "sovereign-code-quality-mcp": "dist/index.js"

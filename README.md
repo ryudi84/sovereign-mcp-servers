@@ -5,7 +5,7 @@
 [![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/ryudi84)](https://github.com/sponsors/ryudi84)
 
-**29 MCP servers. 98 tools. One `npx` command away.**
+**34 MCP servers. 121 tools. One `npx` command away.**
 
 A collection of production-ready [Model Context Protocol](https://modelcontextprotocol.io) servers for Claude Desktop, Cursor, Windsurf, and any MCP-compatible client.
 
@@ -17,11 +17,14 @@ Pick any server and run it:
 # Web scraping
 npx sovereign-web-scraper-mcp
 
-# SEO analysis
-npx sovereign-seo-analyzer-mcp
+# SQL toolkit
+npx sql-forge-mcp
 
-# GitHub stats
-npx sovereign-github-stats-mcp
+# Git helpers
+npx git-forge-mcp
+
+# CSS generator
+npx css-forge-mcp
 
 # JSON Swiss Army knife
 npx json-forge-mcp
@@ -72,6 +75,11 @@ Or add to your MCP configuration:
 | [timestamp-forge](timestamp-forge/) | 3 | MCP server for timestamp conversion — Unix, ISO 8601, relati... | `npx timestamp-forge-mcp` |
 | [uuid-forge](uuid-forge/) | 5 | MCP server for generating UUIDs (v4, v7), ULIDs, nanoids, an... | `npx uuid-forge-mcp` |
 | [web-scraper](web-scraper/) | 4 | MCP server for web scraping — fetch URLs, extract text/links... | `npx sovereign-web-scraper-mcp` |
+| [sql-forge](sql-forge/) | 5 | SQL toolkit: query builder, formatter, validator, schema gen... | `npx sql-forge-mcp` |
+| [git-forge](git-forge/) | 4 | Git toolkit: commit messages, .gitignore, branch names, comm... | `npx git-forge-mcp` |
+| [css-forge](css-forge/) | 4 | CSS toolkit: flexbox, grid, animations, media queries genera... | `npx css-forge-mcp` |
+| [yaml-forge](yaml-forge/) | 5 | YAML toolkit: format, validate, JSON/YAML converter, config ... | `npx yaml-forge-mcp` |
+| [html-forge](html-forge/) | 5 | HTML toolkit: boilerplate, minify, prettify, validate, meta ... | `npx html-forge-mcp` |
 
 ## Categories
 
@@ -81,10 +89,12 @@ Or add to your MCP configuration:
 - **[meta-forge-mcp](meta-forge/)** — MCP server for SEO meta tag generation — title, description, Open Graph, Twitter
 
 ### Developer Tools
-- **[sovereign-github-stats-mcp](github-stats/)** — MCP server for GitHub repository statistics — stars, forks, issues, PRs, languag
-- **[sovereign-code-quality-mcp](code-quality/)** — MCP server for code quality analysis — cyclomatic complexity, duplicate detectio
-- **[sovereign-api-tester-mcp](api-tester/)** — MCP server for API testing — make HTTP requests, test endpoints, generate cURL c
-- **[sovereign-api-forge-mcp](api-forge-mcp/)** — MCP server for generating REST API boilerplate — Express endpoints, middleware, 
+- **[sovereign-github-stats-mcp](github-stats/)** — GitHub repository statistics — stars, forks, issues, PRs, languages
+- **[sovereign-code-quality-mcp](code-quality/)** — Code quality analysis — cyclomatic complexity, duplicate detection
+- **[sovereign-api-tester-mcp](api-tester/)** — API testing — HTTP requests, endpoint testing, cURL generation
+- **[sovereign-api-forge-mcp](api-forge-mcp/)** — REST API boilerplate generator — Express endpoints, middleware
+- **[sql-forge-mcp](sql-forge/)** — SQL query builder, formatter, validator, schema generator, patterns
+- **[git-forge-mcp](git-forge/)** — Git commit messages, .gitignore, branch names, command generator
 
 ### Data & Encoding
 - **[json-forge-mcp](json-forge/)** — MCP server for JSON processing — format, validate, diff, convert, minify, query,
@@ -98,15 +108,18 @@ Or add to your MCP configuration:
 - **[qr-text-forge-mcp](qr-text-forge/)** — MCP server for generating QR code data, encoding URLs, and creating vCard/WiFi/e
 
 ### DevOps & Config
-- **[env-forge-mcp](env-forge/)** — MCP server for .env file validation, parsing, comparison, and generation. Every 
-- **[cron-forge-mcp](cron-forge/)** — MCP server for cron expression parsing, validation, human-readable explanation, 
-- **[ip-calc-mcp](ip-calc/)** — MCP server for IP address calculations — subnet masks, CIDR notation, IP ranges,
-- **[diff-forge-mcp](diff-forge/)** — MCP server for computing text diffs, comparing strings, and generating unified d
+- **[yaml-forge-mcp](yaml-forge/)** — YAML format, validate, JSON/YAML converter, config templates (docker-compose, k8s)
+- **[env-forge-mcp](env-forge/)** — .env file validation, parsing, comparison, and generation
+- **[cron-forge-mcp](cron-forge/)** — Cron expression parsing, validation, human-readable explanation
+- **[ip-calc-mcp](ip-calc/)** — IP address calculations — subnet masks, CIDR notation, IP ranges
+- **[diff-forge-mcp](diff-forge/)** — Text diffs, comparing strings, unified diff format
 
 ### Frontend & Design
-- **[color-forge-mcp](color-forge/)** — MCP server for color palette generation and conversion — HEX, RGB, HSL
-- **[gradient-forge-mcp](gradient-forge/)** — MCP server for CSS gradient generation — linear, radial, conic
-- **[shadow-forge-mcp](shadow-forge/)** — MCP server for CSS box-shadow generation
+- **[css-forge-mcp](css-forge/)** — Flexbox, grid, animations, media queries generator
+- **[html-forge-mcp](html-forge/)** — HTML boilerplate, minify, prettify, validate, meta tags
+- **[color-forge-mcp](color-forge/)** — Color palette generation and conversion — HEX, RGB, HSL
+- **[gradient-forge-mcp](gradient-forge/)** — CSS gradient generation — linear, radial, conic
+- **[shadow-forge-mcp](shadow-forge/)** — CSS box-shadow generation
 
 ### Content & Docs
 - **[markdown-forge-mcp](markdown-forge/)** — MCP server for markdown processing — generate tables, TOC, convert to HTML, form

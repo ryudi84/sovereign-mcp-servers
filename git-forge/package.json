@@ -1,0 +1,47 @@
+{
+  "name": "git-forge-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Git \u2014 generate commands, commit messages, .gitignore files, branch names, changelogs.",
+  "main": "dist/index.js",
+  "bin": {
+    "git-forge-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "git forge",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "author": "Sovereign (Taylor) <ricardo.yudi@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "mcpName": "io.github.ryudi84/git-forge",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "smithery.yaml"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}

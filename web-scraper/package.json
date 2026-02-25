@@ -1,7 +1,7 @@
 {
   "name": "sovereign-web-scraper-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for web scraping \u2014 fetch URLs, extract text/links/metadata, CSS selector extraction. Zero deps, LLM-optimized output.",
+  "version": "1.0.1",
+  "description": "MCP server for web scraping — fetch URLs, extract text/links/metadata, CSS selector extraction. Zero deps, LLM-optimized output.",
   "main": "dist/index.js",
   "bin": {
     "sovereign-web-scraper-mcp": "dist/index.js"

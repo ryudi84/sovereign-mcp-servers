@@ -4,4 +4,5 @@ startCommand:
     type: object
     properties: {}
   commandFunction: |
-    config => ({ command: 'npx', args: ['ip-calc-mcp'], env: {} })
+    (config) => ({ command: 'npx', args: ['-y', 'ip-calc-mcp'] })
+  exampleConfig: {}

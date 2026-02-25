@@ -1,6 +1,6 @@
 {
   "name": "json-forge-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "MCP server for JSON processing — format, validate, diff, convert, minify, query, analyze",
   "main": "dist/index.js",
   "bin": {
