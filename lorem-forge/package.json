@@ -1,7 +1,7 @@
 {
   "name": "lorem-forge-mcp",
   "version": "1.0.0",
-  "description": "MCP server for generating placeholder data \u2014 lorem ipsum, fake names, emails, addresses, phone numbers, company names. Zero external deps.",
+  "description": "MCP server for generating placeholder data — lorem ipsum, fake names, emails, addresses, phone numbers, company names. Zero external deps.",
   "main": "dist/index.js",
   "bin": {
     "lorem-forge-mcp": "dist/index.js"
@@ -41,5 +41,6 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "mcpName": "io.github.ryudi84/lorem-forge-mcp"
 }

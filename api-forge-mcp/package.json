@@ -46,5 +46,6 @@
     "dist/",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "mcpName": "io.github.ryudi84/sovereign-api-forge-mcp"
 }

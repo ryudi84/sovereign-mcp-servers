@@ -40,5 +40,6 @@
     "dist/",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "mcpName": "io.github.ryudi84/jwt-forge-mcp"
 }

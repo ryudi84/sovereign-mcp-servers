@@ -45,5 +45,6 @@
     "dist/",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "mcpName": "io.github.ryudi84/mcp-forge-mcp"
 }

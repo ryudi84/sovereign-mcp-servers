@@ -41,5 +41,6 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "mcpName": "io.github.ryudi84/cron-forge-mcp"
 }

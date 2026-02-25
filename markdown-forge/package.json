@@ -1,7 +1,7 @@
 {
   "name": "markdown-forge-mcp",
   "version": "1.0.0",
-  "description": "MCP server for markdown processing \u2014 generate tables, TOC, convert to HTML, format badges, create link references.",
+  "description": "MCP server for markdown processing — generate tables, TOC, convert to HTML, format badges, create link references.",
   "main": "dist/index.js",
   "bin": {
     "markdown-forge-mcp": "dist/index.js"
@@ -41,5 +41,6 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "mcpName": "io.github.ryudi84/markdown-forge-mcp"
 }
