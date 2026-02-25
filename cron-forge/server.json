@@ -1,51 +1,20 @@
 {
-  "name": "cron-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/cron",
   "description": "MCP server for cron expression parsing, validation, human-readable explanation, and next run calculations.",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/cron-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "cron-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "explain_cron",
-      "description": "Explain a cron expression in human-readable English."
-    },
-    {
-      "name": "next_cron_runs",
-      "description": "Calculate the next N run times for a cron expression."
-    },
-    {
-      "name": "validate_cron",
-      "description": "Validate a cron expression and return detailed field analysis."
+      "registryType": "npm",
+      "identifier": "cron-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "cron forge",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

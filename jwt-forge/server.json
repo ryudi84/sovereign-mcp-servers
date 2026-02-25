@@ -1,43 +1,20 @@
 {
-  "name": "jwt-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/jwt",
   "description": "MCP server for JWT decoding and inspection",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/jwt-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "jwt-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "decode_jwt",
-      "description": "Decode a JWT and return header, payload, and signature."
-    },
-    {
-      "name": "validate_jwt_format",
-      "description": "Check if a JWT is well-formed (3 parts, valid base64url, parseable header/payload)."
+      "registryType": "npm",
+      "identifier": "jwt-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "jwt forge",
-    "ai-tools",
-    "sovereign"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

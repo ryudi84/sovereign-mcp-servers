@@ -1,47 +1,20 @@
 {
-  "name": "timestamp-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/timestamp",
   "description": "MCP server for timestamp conversion \u2014 Unix, ISO 8601, relative time",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/timestamp-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "timestamp-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "current_time",
-      "description": "Get current time in multiple formats: Unix, UTC, ISO 8601, RFC 2822, SQL datetime."
-    },
-    {
-      "name": "unix_to_human",
-      "description": "Convert Unix timestamp to human-readable formats. Auto-detects seconds vs milliseconds."
-    },
-    {
-      "name": "date_diff",
-      "description": "Calculate the difference between two dates."
+      "registryType": "npm",
+      "identifier": "timestamp-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "timestamp forge",
-    "ai-tools",
-    "sovereign"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

@@ -1,59 +1,20 @@
 {
-  "name": "sovereign-api-tester-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/api-tester",
   "description": "MCP server for API testing \u2014 make HTTP requests, test endpoints, generate cURL commands, create mock responses, health checks. Postman in your IDE.",
-  "version": "1.0.0",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/api-tester",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "sovereign-api-tester-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.0",
+  "packages": [
     {
-      "name": "http_request",
-      "description": "Make an HTTP request (GET, POST, PUT, DELETE, PATCH) with custom headers and body. Returns status, timing, response headers, and body."
-    },
-    {
-      "name": "test_endpoint",
-      "description": "Test an API endpoint with expected status code validation and optional JSON field checks. Shows PASS/FAIL for each check."
-    },
-    {
-      "name": "generate_curl",
-      "description": "Generate a cURL command from method, URL, headers, and body parameters."
-    },
-    {
-      "name": "mock_response",
-      "description": "Generate realistic mock JSON responses for API prototyping. Supports resource types: user, product, order, post, comment."
-    },
-    {
-      "name": "api_health_check",
-      "description": "Check health of multiple API endpoints simultaneously. Shows UP/DOWN status table with response times."
+      "registryType": "npm",
+      "identifier": "sovereign-api-tester-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "api tester",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

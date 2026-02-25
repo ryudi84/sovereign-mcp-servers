@@ -1,53 +1,20 @@
 {
-  "name": "sovereign-api-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/api",
   "description": "MCP server for generating REST API boilerplate \u2014 Express endpoints, middleware, validation, error handling",
-  "version": "1.0.0",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/api-forge-mcp",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "sovereign-api-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.0",
+  "packages": [
     {
-      "name": "generate_express_api",
-      "description": "Generate a complete Express.js REST API with routes, error handling, CORS, and optional JWT auth"
-    },
-    {
-      "name": "generate_endpoint",
-      "description": "Generate a single Express route handler with validation, error handling, and JSDoc documentation"
-    },
-    {
-      "name": "generate_middleware",
-      "description": "Generate a complete Express middleware function (auth, rate-limit, cors, logging, or validation)"
+      "registryType": "npm",
+      "identifier": "sovereign-api-forge-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "api",
-    "rest",
-    "express",
-    "boilerplate",
-    "generator",
-    "middleware",
-    "endpoints",
-    "typescript",
-    "ai-tools"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

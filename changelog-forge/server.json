@@ -1,51 +1,20 @@
 {
-  "name": "changelog-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/changelog",
   "description": "MCP server for generating changelogs from conventional commits, parsing semver, and creating release notes.",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/changelog-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "changelog-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "parse_commits",
-      "description": "Parse conventional commit messages and categorize them (feat, fix, docs, chore, etc.)."
-    },
-    {
-      "name": "generate_changelog",
-      "description": "Generate a full CHANGELOG.md entry from commit messages."
-    },
-    {
-      "name": "bump_version",
-      "description": "Suggest the next semver version based on commit types (major for breaking, minor for feat, patch for fix)."
+      "registryType": "npm",
+      "identifier": "changelog-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "changelog forge",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

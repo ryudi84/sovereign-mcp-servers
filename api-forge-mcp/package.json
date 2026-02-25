@@ -1,7 +1,7 @@
 {
   "name": "sovereign-api-forge-mcp",
   "version": "1.0.0",
-  "description": "MCP server for generating REST API boilerplate — Express endpoints, middleware, validation, error handling",
+  "description": "MCP server for generating REST API boilerplate \u2014 Express endpoints, middleware, validation, error handling",
   "main": "dist/index.js",
   "bin": {
     "sovereign-api-forge-mcp": "dist/index.js"
@@ -47,5 +47,5 @@
     "README.md",
     "LICENSE"
   ],
-  "mcpName": "io.github.ryudi84/sovereign-api-forge-mcp"
+  "mcpName": "io.github.ryudi84/api"
 }

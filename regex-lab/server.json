@@ -1,47 +1,20 @@
 {
-  "name": "regex-lab-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/regex-lab",
   "description": "MCP server for regex testing, matching, replacing, and validation",
-  "version": "1.0.2",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/regex-lab",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "regex-lab-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.2",
+  "packages": [
     {
-      "name": "test_regex",
-      "description": "Test a regex pattern against a string. Returns all matches with positions and capture groups."
-    },
-    {
-      "name": "replace_regex",
-      "description": "Replace matches in a string using a regex pattern and replacement string."
-    },
-    {
-      "name": "validate_regex",
-      "description": "Check if a regex pattern is syntactically valid."
+      "registryType": "npm",
+      "identifier": "regex-lab-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "regex lab",
-    "ai-tools",
-    "sovereign"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

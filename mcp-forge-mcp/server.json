@@ -1,52 +1,20 @@
 {
-  "name": "mcp-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/mcp",
   "description": "Meta MCP server that generates other MCP servers \u2014 the factory that builds factories",
-  "version": "1.0.0",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/mcp-forge-mcp",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.0",
+  "packages": [
     {
-      "name": "generate_server",
-      "description": "Generate a complete MCP server package from a name, description, and tool definitions. Returns package.json, tsconfig.json, src/index.ts, README.md, and mcpize.yaml."
-    },
-    {
-      "name": "list_templates",
-      "description": "List available pre-built MCP server templates with their included tools."
-    },
-    {
-      "name": "generate_from_template",
-      "description": "Generate a complete MCP server from a pre-built template (utility, converter, generator, validator)."
+      "registryType": "npm",
+      "identifier": "mcp-forge-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-forge",
-    "meta-tool",
-    "code-generator",
-    "mcp-server-generator",
-    "ai-tools",
-    "typescript",
-    "scaffold",
-    "model-context-protocol"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

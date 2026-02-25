@@ -1,51 +1,20 @@
 {
-  "name": "lorem-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/lorem",
   "description": "MCP server for generating placeholder data \u2014 lorem ipsum, fake names, emails, addresses, phone numbers, company names. Zero external deps.",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/lorem-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "lorem-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "generate_lorem",
-      "description": "Generate lorem ipsum text. Choose paragraphs, sentences, or words."
-    },
-    {
-      "name": "generate_fake_data",
-      "description": "Generate fake placeholder data \u2014 names, emails, phone numbers, addresses, companies. Great for testing."
-    },
-    {
-      "name": "generate_json_data",
-      "description": "Generate an array of fake JSON objects with specified fields. Perfect for API mocking."
+      "registryType": "npm",
+      "identifier": "lorem-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "lorem forge",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

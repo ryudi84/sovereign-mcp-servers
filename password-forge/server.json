@@ -1,51 +1,20 @@
 {
-  "name": "password-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/password",
   "description": "MCP server for generating secure passwords, passphrases, and checking password strength. Zero external deps.",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/password-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "password-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "generate_password",
-      "description": "Generate a cryptographically secure random password."
-    },
-    {
-      "name": "generate_passphrase",
-      "description": "Generate a memorable passphrase from random words (XKCD-style)."
-    },
-    {
-      "name": "check_strength",
-      "description": "Analyze password strength \u2014 length, charset diversity, entropy estimate, and tips."
+      "registryType": "npm",
+      "identifier": "password-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "password forge",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

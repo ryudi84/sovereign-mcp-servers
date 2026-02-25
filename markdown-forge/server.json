@@ -1,55 +1,20 @@
 {
-  "name": "markdown-forge-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/markdown",
   "description": "MCP server for markdown processing \u2014 generate tables, TOC, convert to HTML, format badges, create link references.",
-  "version": "1.0.1",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/markdown-forge",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "markdown-forge-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.1",
+  "packages": [
     {
-      "name": "generate_table",
-      "description": "Generate a markdown table from headers and rows."
-    },
-    {
-      "name": "generate_toc",
-      "description": "Generate a table of contents from markdown headings."
-    },
-    {
-      "name": "generate_badges",
-      "description": "Generate shields.io markdown badges for a project."
-    },
-    {
-      "name": "markdown_to_html",
-      "description": "Convert basic markdown to HTML (headings, bold, italic, code, links, lists, paragraphs)."
+      "registryType": "npm",
+      "identifier": "markdown-forge-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "markdown forge",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }

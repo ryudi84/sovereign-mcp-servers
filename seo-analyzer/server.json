@@ -1,59 +1,20 @@
 {
-  "name": "sovereign-seo-analyzer-mcp",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ryudi84/seo-analyzer",
   "description": "MCP server for SEO analysis \u2014 check meta tags, heading hierarchy, link analysis, keyword density, robots.txt and sitemap generation.",
-  "version": "1.0.0",
-  "vendor": "Sovereign (Taylor)",
-  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/seo-analyzer",
-  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
-  "license": "MIT",
-  "runtime": "node",
-  "command": {
-    "npx": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "sovereign-seo-analyzer-mcp"
-      ]
-    }
+  "repository": {
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
+    "source": "github"
   },
-  "tools": [
+  "version": "1.0.0",
+  "packages": [
     {
-      "name": "analyze_meta",
-      "description": "Analyze a URL"
-    },
-    {
-      "name": "check_headings",
-      "description": "Analyze heading hierarchy (H1-H6) for SEO best practices."
-    },
-    {
-      "name": "keyword_density",
-      "description": "Analyze keyword/word frequency and density on a page."
-    },
-    {
-      "name": "generate_robots_txt",
-      "description": "Generate a robots.txt file for a given domain."
-    },
-    {
-      "name": "generate_sitemap",
-      "description": "Generate a basic sitemap.xml from a list of URLs."
+      "registryType": "npm",
+      "identifier": "sovereign-seo-analyzer-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
-  ],
-  "categories": [
-    "mcp",
-    "mcp-server",
-    "model-context-protocol",
-    "seo analyzer",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
-  ],
-  "tags": [
-    "mcp",
-    "mcp-server",
-    "ai-tools",
-    "claude",
-    "cursor",
-    "windsurf"
   ]
 }
