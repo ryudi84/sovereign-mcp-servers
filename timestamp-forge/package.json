@@ -1,7 +1,7 @@
 {
   "name": "timestamp-forge-mcp",
-  "version": "1.0.1",
-  "description": "MCP server for timestamp conversion \u2014 Unix, ISO 8601, relative time",
+  "version": "1.0.3",
+  "description": "MCP server for timestamp conversion — Unix, ISO 8601, relative time",
   "main": "dist/index.js",
   "bin": {
     "timestamp-forge-mcp": "dist/index.js"

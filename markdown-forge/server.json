@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ryudi84/markdown",
-  "description": "MCP server for markdown processing \u2014 generate tables, TOC, convert to HTML, format badges, create link references.",
+  "description": "MCP server for markdown: tables, TOC, HTML conversion, formatting.",
   "repository": {
     "url": "https://github.com/ryudi84/sovereign-mcp-servers",
     "source": "github"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "markdown-forge-mcp",
-      "version": "1.0.1",
+      "version": "1.0.3",
       "transport": {
         "type": "stdio"
       }

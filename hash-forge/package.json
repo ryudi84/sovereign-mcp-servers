@@ -1,7 +1,7 @@
 {
   "name": "hash-forge-mcp",
-  "version": "1.0.1",
-  "description": "MCP server for cryptographic hashing \u2014 MD5, SHA-1, SHA-256, SHA-384, SHA-512",
+  "version": "1.0.3",
+  "description": "MCP server for cryptographic hashing — MD5, SHA-1, SHA-256, SHA-384, SHA-512",
   "main": "dist/index.js",
   "bin": {
     "hash-forge-mcp": "dist/index.js"

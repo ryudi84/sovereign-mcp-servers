@@ -1,7 +1,7 @@
 {
   "name": "mcp-forge-mcp",
-  "version": "1.0.0",
-  "description": "Meta MCP server that generates other MCP servers \u2014 the factory that builds factories",
+  "version": "1.0.2",
+  "description": "Meta MCP server that generates other MCP servers — the factory that builds factories",
   "main": "dist/index.js",
   "bin": {
     "mcp-forge-mcp": "dist/index.js"

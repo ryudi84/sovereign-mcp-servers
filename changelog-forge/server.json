@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ryudi84/changelog",
-  "description": "MCP server for generating changelogs from conventional commits, parsing semver, and creating release notes.",
+  "description": "MCP server for generating changelogs from conventional commits.",
   "repository": {
     "url": "https://github.com/ryudi84/sovereign-mcp-servers",
     "source": "github"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "changelog-forge-mcp",
-      "version": "1.0.1",
+      "version": "1.0.3",
       "transport": {
         "type": "stdio"
       }

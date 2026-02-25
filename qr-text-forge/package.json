@@ -1,6 +1,6 @@
 {
   "name": "qr-text-forge-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for generating QR code data, encoding URLs, and creating vCard/WiFi/email QR payloads. Returns text-based QR representations.",
   "main": "dist/index.js",
   "bin": {

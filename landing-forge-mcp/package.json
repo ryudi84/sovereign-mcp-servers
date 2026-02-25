@@ -1,6 +1,6 @@
 {
   "name": "landing-forge-mcp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "MCP server that generates complete, production-ready HTML landing pages, product cards, and pricing tables",
   "main": "dist/index.js",
   "bin": {

@@ -1,7 +1,7 @@
 {
   "name": "gradient-forge-mcp",
-  "version": "1.0.1",
-  "description": "MCP server for CSS gradient generation \u2014 linear, radial, conic",
+  "version": "1.0.3",
+  "description": "MCP server for CSS gradient generation — linear, radial, conic",
   "main": "dist/index.js",
   "bin": {
     "gradient-forge-mcp": "dist/index.js"

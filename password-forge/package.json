@@ -1,6 +1,6 @@
 {
   "name": "password-forge-mcp",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "MCP server for generating secure passwords, passphrases, and checking password strength. Zero external deps.",
   "main": "dist/index.js",
   "bin": {

@@ -1,7 +1,7 @@
 {
   "name": "color-forge-mcp",
-  "version": "1.0.1",
-  "description": "MCP server for color palette generation and conversion \u2014 HEX, RGB, HSL",
+  "version": "1.0.3",
+  "description": "MCP server for color palette generation and conversion — HEX, RGB, HSL",
   "main": "dist/index.js",
   "bin": {
     "color-forge-mcp": "dist/index.js"

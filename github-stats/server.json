@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ryudi84/github-stats",
-  "description": "MCP server for GitHub repository statistics \u2014 stars, forks, issues, PRs, languages, contributors, commit activity. No auth needed for public repos.",
+  "description": "MCP server for GitHub repo stats: stars, forks, contributors, activity.",
   "repository": {
     "url": "https://github.com/ryudi84/sovereign-mcp-servers",
     "source": "github"

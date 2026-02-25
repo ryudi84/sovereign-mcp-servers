@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ryudi84/web-scraper",
-  "description": "MCP server for web scraping \u2014 fetch URLs, extract text/links/metadata, CSS selector extraction. Zero deps, LLM-optimized output.",
+  "description": "MCP server for web scraping: URLs, links, metadata, CSS extraction.",
   "repository": {
     "url": "https://github.com/ryudi84/sovereign-mcp-servers",
     "source": "github"

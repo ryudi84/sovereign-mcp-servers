@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ryudi84/ip-calc",
-  "description": "MCP server for IP address calculations \u2014 subnet masks, CIDR notation, IP ranges, network analysis. Zero external deps.",
+  "description": "MCP server for IP calculations: subnets, CIDR, ranges, network info.",
   "repository": {
     "url": "https://github.com/ryudi84/sovereign-mcp-servers",
     "source": "github"
   },
-  "version": "1.0.2",
+  "version": "1.0.4",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "ip-calc-mcp",
-      "version": "1.0.2",
+      "version": "1.0.4",
       "transport": {
         "type": "stdio"
       }

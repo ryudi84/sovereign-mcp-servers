@@ -1,6 +1,6 @@
 {
   "name": "readme-forge-mcp",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "MCP server for README.md generation from project metadata",
   "main": "dist/index.js",
   "bin": {

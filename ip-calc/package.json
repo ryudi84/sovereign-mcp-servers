@@ -1,7 +1,7 @@
 {
   "name": "ip-calc-mcp",
-  "version": "1.0.2",
-  "description": "MCP server for IP address calculations \u2014 subnet masks, CIDR notation, IP ranges, network analysis. Zero external deps.",
+  "version": "1.0.4",
+  "description": "MCP server for IP address calculations — subnet masks, CIDR notation, IP ranges, network analysis. Zero external deps.",
   "main": "dist/index.js",
   "bin": {
     "ip-calc-mcp": "dist/index.js"
