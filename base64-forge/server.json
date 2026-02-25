@@ -1,21 +1,59 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/base64-forge-mcp",
-  "description": "Encode/decode Base64, URL-safe variants, and file data",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "base64-forge"
-  },
+  "name": "base64-forge-mcp",
+  "description": "MCP server for Base64, URL, and HTML encoding/decoding",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "base64-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/base64-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "base64-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "encode_base64",
+      "description": "Encode text to Base64."
+    },
+    {
+      "name": "decode_base64",
+      "description": "Decode a Base64 string to plain text."
+    },
+    {
+      "name": "encode_url",
+      "description": "URL-encode a string."
+    },
+    {
+      "name": "decode_url",
+      "description": "Decode a URL-encoded string."
+    },
+    {
+      "name": "encode_html",
+      "description": "Escape HTML special characters."
+    },
+    {
+      "name": "decode_html",
+      "description": "Decode HTML entities to plain text."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "base64 forge",
+    "ai-tools",
+    "sovereign"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

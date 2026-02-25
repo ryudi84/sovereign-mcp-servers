@@ -1,21 +1,47 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/hash-forge-mcp",
-  "description": "Hash text with SHA-256, SHA-384, SHA-512 and compare hashes",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "hash-forge"
-  },
+  "name": "hash-forge-mcp",
+  "description": "MCP server for cryptographic hashing \u2014 MD5, SHA-1, SHA-256, SHA-384, SHA-512",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "hash-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/hash-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "hash-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "hash_text",
+      "description": "Hash text with all algorithms: MD5, SHA-1, SHA-256, SHA-384, SHA-512."
+    },
+    {
+      "name": "compute_hmac",
+      "description": "Generate an HMAC signature."
+    },
+    {
+      "name": "compare_hashes",
+      "description": "Compare two hash strings (case-insensitive)."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "hash forge",
+    "ai-tools",
+    "sovereign"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

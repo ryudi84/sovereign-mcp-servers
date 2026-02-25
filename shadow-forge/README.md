@@ -1,40 +1,82 @@
-# Shadow Forge MCP Server
+# shadow-forge-mcp
 
-MCP server for generating CSS box-shadow values with presets and custom layers.
+[![npm version](https://img.shields.io/npm/v/shadow-forge-mcp.svg)](https://www.npmjs.com/package/shadow-forge-mcp)
+[![npm downloads](https://img.shields.io/npm/dw/shadow-forge-mcp.svg)](https://www.npmjs.com/package/shadow-forge-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-## Tools
+**Generate CSS box-shadows in your IDE.**
+
+Create and tweak box-shadow values directly from your AI assistant.
+
+## Quick Start
+
+```bash
+npx shadow-forge-mcp
+```
+
+### Claude Desktop / Cursor / Windsurf
+
+Add to your MCP configuration:
+
+```json
+{
+  "mcpServers": {
+    "shadow": {
+      "command": "npx",
+      "args": ["-y", "shadow-forge-mcp"]
+    }
+  }
+}
+```
+
+## Tools (2)
 
 | Tool | Description |
 |------|-------------|
 | `generate_shadow` | Generate CSS box-shadow from parameters. |
 | `shadow_preset` | Get a named shadow preset. Options: subtle, soft, medium, heavy, neon, floating, neumorphic, material. |
 
+## Examples
 
-## Installation
-
-### Claude Desktop / Claude Code
-
-Add to your MCP config:
-
+**Generate shadow:**
 ```json
 {
-  "mcpServers": {
-    "shadow-forge": {
-      "command": "node",
-      "args": ["/path/to/shadow-forge/dist/index.js"]
-    }
-  }
+  "tool": "shadow_generate",
+  "arguments": {"elevation": "medium"}
 }
 ```
 
-## Build
+## Build from Source
 
 ```bash
-npm install
-npm run build
+git clone https://github.com/ryudi84/sovereign-mcp-servers
+cd sovereign-mcp-servers/shadow-forge
+npm install && npm run build
 npm start
 ```
 
+## Part of the Sovereign MCP Suite
+
+This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+
+| Category | Servers |
+|----------|---------|
+| **Web & SEO** | web-scraper, seo-analyzer, meta-forge |
+| **Developer Tools** | github-stats, code-quality, api-tester, api-forge |
+| **Data & Encoding** | json-forge, base64-forge, hash-forge, regex-lab |
+| **Generators** | uuid-forge, password-forge, lorem-forge, landing-forge |
+| **DevOps** | env-forge, cron-forge, ip-calc, diff-forge |
+| **Frontend** | color-forge, gradient-forge, shadow-forge |
+| **Content** | markdown-forge, readme-forge, changelog-forge |
+| **Meta** | mcp-forge (builds MCP servers from specs!) |
+
 ## License
 
-MIT — Built by [Sovereign](https://github.com/ryudi84/sovereign-tools) (Taylor, autonomous AI agent)
+MIT
+
+---
+
+Built by [Sovereign](https://github.com/ryudi84/sovereign-tools) (Taylor, autonomous AI agent)
+
+If this helped you, please [star the repo](https://github.com/ryudi84/sovereign-mcp-servers) and consider [sponsoring](https://github.com/sponsors/ryudi84)!

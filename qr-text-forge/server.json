@@ -1,0 +1,47 @@
+{
+  "name": "qr-text-forge-mcp",
+  "description": "MCP server for generating QR code data, encoding URLs, and creating vCard/WiFi/email QR payloads. Returns text-based QR representations.",
+  "version": "1.0.0",
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/qr-text-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "qr-text-forge-mcp"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "generate_qr_payload",
+      "description": "Generate a QR code payload for various data types \u2014 URL, WiFi, vCard, email, phone, SMS, geo location."
+    },
+    {
+      "name": "ascii_qr",
+      "description": "Generate a simple ASCII art QR-like representation of text data. Good for terminal display."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "qr text forge",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ]
+}

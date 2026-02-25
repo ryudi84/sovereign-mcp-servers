@@ -1,21 +1,47 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/diff-forge-mcp",
-  "description": "Compare text and code, show differences with context",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "diff-forge"
-  },
+  "name": "diff-forge-mcp",
+  "description": "MCP server for computing text diffs, comparing strings, and generating unified diff output.",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "diff-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/diff-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "diff-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "diff_text",
+      "description": "Compare two texts and show the differences line by line with +/- markers."
+    },
+    {
+      "name": "diff_stats",
+      "description": "Get diff statistics \u2014 character count, word count, line count differences between two texts."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "diff forge",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

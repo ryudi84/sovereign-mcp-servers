@@ -1,21 +1,59 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/uuid-forge-mcp",
-  "description": "Generate UUID v4/v7, ULID, nanoid, and random unique identifiers",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "uuid-forge"
-  },
+  "name": "uuid-forge-mcp",
+  "description": "MCP server for generating UUIDs (v4, v7), ULIDs, nanoids, and random IDs. Every project needs unique identifiers.",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "uuid-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/uuid-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "uuid-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "generate_uuid_v4",
+      "description": "Generate one or more UUID v4 (random). Returns the most common ID format."
+    },
+    {
+      "name": "generate_uuid_v7",
+      "description": "Generate UUID v7 (time-sortable, recommended for databases). Includes millisecond timestamp prefix."
+    },
+    {
+      "name": "generate_nanoid",
+      "description": "Generate nanoid-style compact IDs. URL-safe, shorter than UUID."
+    },
+    {
+      "name": "generate_ulid",
+      "description": "Generate ULID (Universally Unique Lexicographically Sortable Identifier). Great for distributed systems."
+    },
+    {
+      "name": "parse_uuid",
+      "description": "Parse a UUID and extract version, variant, and timestamp (if v1/v7)."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "uuid forge",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

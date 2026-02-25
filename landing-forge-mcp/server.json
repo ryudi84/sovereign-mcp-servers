@@ -1,0 +1,53 @@
+{
+  "name": "landing-forge-mcp",
+  "description": "MCP server that generates complete, production-ready HTML landing pages, product cards, and pricing tables",
+  "version": "1.0.0",
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/landing-forge-mcp",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "landing-forge-mcp"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "generate_landing_page",
+      "description": "Generate a complete, production-ready HTML landing page with responsive design, hero section, features grid, CTA, and footer. Returns a self-contained HTML document with inline CSS and no external dependencies."
+    },
+    {
+      "name": "generate_product_card",
+      "description": "Generate a standalone HTML product card component with inline CSS. Perfect for embedding in landing pages, stores, or product showcases."
+    },
+    {
+      "name": "generate_pricing_table",
+      "description": "Generate a complete pricing table HTML component with multiple plan columns. Supports highlighting a recommended plan. Uses dark theme with inline CSS."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "landing-page",
+    "html-generator",
+    "product-card",
+    "pricing-table",
+    "web-design",
+    "responsive",
+    "dark-mode",
+    "ai-tools",
+    "no-code"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ]
+}

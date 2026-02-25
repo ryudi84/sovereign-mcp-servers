@@ -1,21 +1,43 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/color-forge-mcp",
-  "description": "Convert between HEX, RGB, HSL color formats and generate palettes",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "color-forge"
-  },
+  "name": "color-forge-mcp",
+  "description": "MCP server for color palette generation and conversion \u2014 HEX, RGB, HSL",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "color-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/color-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "color-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "generate_palette",
+      "description": "Generate a color palette. Harmonies: random, analogous, complementary, triadic, monochromatic, warm, cool, pastel, neon."
+    },
+    {
+      "name": "export_palette",
+      "description": "Export colors to CSS, Tailwind, SCSS, or JSON format."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "color forge",
+    "ai-tools",
+    "sovereign"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

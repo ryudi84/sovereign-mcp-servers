@@ -1,0 +1,45 @@
+{
+  "name": "sovereign-code-quality-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for code quality analysis \u2014 cyclomatic complexity, duplicate detection, naming conventions, file metrics, refactoring suggestions.",
+  "main": "dist/index.js",
+  "bin": {
+    "sovereign-code-quality-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "code quality",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "author": "Sovereign (Taylor) <ricardo.yudi@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryudi84/sovereign-mcp-servers"
+  },
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers#readme",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}

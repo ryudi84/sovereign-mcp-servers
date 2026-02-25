@@ -1,68 +1,83 @@
-# API Forge MCP
+# sovereign-api-forge-mcp
 
-An MCP server that generates REST API boilerplate code — Express.js endpoints, middleware, validation, and error handling.
+[![npm version](https://img.shields.io/npm/v/sovereign-api-forge-mcp.svg)](https://www.npmjs.com/package/sovereign-api-forge-mcp)
+[![npm downloads](https://img.shields.io/npm/dw/sovereign-api-forge-mcp.svg)](https://www.npmjs.com/package/sovereign-api-forge-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-Built by [Sovereign (Taylor)](https://github.com/ryudi84/sovereign-mcp-servers).
+**Generate REST API boilerplate — Express endpoints, middleware.**
 
-## Tools
+Scaffold API endpoints, middleware, and route handlers from your IDE.
 
-### `generate_express_api`
-
-Generate a complete Express.js REST API project with all files.
-
-**Parameters:**
-
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| `name` | string | yes | Project/API name (kebab-case) |
-| `endpoints` | array | yes | Array of `{method, path, description}` |
-| `with_auth` | boolean | no | Include JWT authentication (default: false) |
-
-**Output:** Complete project files — `index.js`, `errors.js`, `package.json`, `README.md`, and optionally `auth.js`.
-
-### `generate_endpoint`
-
-Generate a single Express route handler with validation and JSDoc.
-
-**Parameters:**
-
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| `method` | string | yes | HTTP method (GET, POST, PUT, PATCH, DELETE) |
-| `path` | string | yes | Route path (e.g. `/users/:id`) |
-| `description` | string | yes | What this endpoint does |
-| `params` | array | no | Array of `{name, type, required}` for validation |
-| `response_example` | string | no | Example JSON response for docs |
-
-### `generate_middleware`
-
-Generate a complete Express middleware function.
-
-**Parameters:**
-
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| `type` | string | yes | One of: `auth`, `rate-limit`, `cors`, `logging`, `validation` |
-
-## Installation
+## Quick Start
 
 ```bash
-npm install api-forge-mcp
+npx sovereign-api-forge-mcp
 ```
 
-## Usage with Claude Desktop
+### Claude Desktop / Cursor / Windsurf
+
+Add to your MCP configuration:
 
 ```json
 {
   "mcpServers": {
-    "api-forge": {
+    "api": {
       "command": "npx",
-      "args": ["api-forge-mcp"]
+      "args": ["-y", "sovereign-api-forge-mcp"]
     }
   }
 }
 ```
 
+## Tools (3)
+
+| Tool | Description |
+|------|-------------|
+| `generate_express_api` | Generate a complete Express.js REST API with routes, error handling, CORS, and optional JWT auth |
+| `generate_endpoint` | Generate a single Express route handler with validation, error handling, and JSDoc documentation |
+| `generate_middleware` | Generate a complete Express middleware function (auth, rate-limit, cors, logging, or validation) |
+
+## Examples
+
+**Generate endpoint:**
+```json
+{
+  "tool": "generate_endpoint",
+  "arguments": {"path": "/api/users", "method": "GET"}
+}
+```
+
+## Build from Source
+
+```bash
+git clone https://github.com/ryudi84/sovereign-mcp-servers
+cd sovereign-mcp-servers/api-forge-mcp
+npm install && npm run build
+npm start
+```
+
+## Part of the Sovereign MCP Suite
+
+This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+
+| Category | Servers |
+|----------|---------|
+| **Web & SEO** | web-scraper, seo-analyzer, meta-forge |
+| **Developer Tools** | github-stats, code-quality, api-tester, api-forge |
+| **Data & Encoding** | json-forge, base64-forge, hash-forge, regex-lab |
+| **Generators** | uuid-forge, password-forge, lorem-forge, landing-forge |
+| **DevOps** | env-forge, cron-forge, ip-calc, diff-forge |
+| **Frontend** | color-forge, gradient-forge, shadow-forge |
+| **Content** | markdown-forge, readme-forge, changelog-forge |
+| **Meta** | mcp-forge (builds MCP servers from specs!) |
+
 ## License
 
 MIT
+
+---
+
+Built by [Sovereign](https://github.com/ryudi84/sovereign-tools) (Taylor, autonomous AI agent)
+
+If this helped you, please [star the repo](https://github.com/ryudi84/sovereign-mcp-servers) and consider [sponsoring](https://github.com/sponsors/ryudi84)!

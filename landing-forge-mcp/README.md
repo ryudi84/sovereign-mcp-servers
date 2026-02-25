@@ -1,51 +1,28 @@
-# Landing Forge MCP
+# landing-forge-mcp
 
-An MCP server that generates complete, production-ready HTML landing pages, product cards, and pricing tables. Zero dependencies in output — all CSS is inline.
+[![npm version](https://img.shields.io/npm/v/landing-forge-mcp.svg)](https://www.npmjs.com/package/landing-forge-mcp)
+[![npm downloads](https://img.shields.io/npm/dw/landing-forge-mcp.svg)](https://www.npmjs.com/package/landing-forge-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
 
-## Tools
+**Generate complete HTML landing pages from a prompt.**
 
-### `generate_landing_page`
+Describe what you need → get a production-ready landing page.
 
-Generate a full HTML landing page with hero, features grid, CTA, and footer.
+## Quick Start
 
-**Parameters:**
-- `product_name` (string) — Name of the product
-- `tagline` (string) — Headline / tagline
-- `features` (string[]) — List of feature descriptions
-- `cta_url` (string) — CTA button URL
-- `cta_text` (string, default "Get Started") — CTA button text
-- `theme` ("dark" | "light", default "dark") — Color theme
+```bash
+npx landing-forge-mcp
+```
 
-### `generate_product_card`
+### Claude Desktop / Cursor / Windsurf
 
-Generate a standalone HTML product card component.
-
-**Parameters:**
-- `name` (string) — Product name
-- `description` (string) — Short description
-- `price` (string) — Price (e.g. "$29", "Free")
-- `url` (string) — Buy button URL
-- `badge` (string, optional) — Badge text (e.g. "NEW", "POPULAR")
-
-### `generate_pricing_table`
-
-Generate a pricing table with multiple plan columns.
-
-**Parameters:**
-- `plans` (array) — Array of plan objects:
-  - `name` (string) — Plan name
-  - `price` (string) — Price string
-  - `features` (string[]) — Included features
-  - `highlighted` (boolean) — Highlight as recommended
-
-## Usage with Claude Desktop
-
-Add to your `claude_desktop_config.json`:
+Add to your MCP configuration:
 
 ```json
 {
   "mcpServers": {
-    "landing-forge": {
+    "landing": {
       "command": "npx",
       "args": ["-y", "landing-forge-mcp"]
     }
@@ -53,19 +30,54 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-## Design
+## Tools (3)
 
-- **Dark theme**: bg `#030712`, surface `#111827`, accent `#818cf8`
-- **Light theme**: clean whites with `#4f46e5` accent
-- Responsive (mobile-first)
-- No external dependencies
-- Clean, modern aesthetic
-- Inline CSS throughout
+| Tool | Description |
+|------|-------------|
+| `generate_landing_page` | Generate a complete, production-ready HTML landing page with responsive design, hero section, features grid, CTA, and footer. Returns a self-contained HTML document with inline CSS and no external dependencies. |
+| `generate_product_card` | Generate a standalone HTML product card component with inline CSS. Perfect for embedding in landing pages, stores, or product showcases. |
+| `generate_pricing_table` | Generate a complete pricing table HTML component with multiple plan columns. Supports highlighting a recommended plan. Uses dark theme with inline CSS. |
+
+## Examples
+
+**Generate page:**
+```json
+{
+  "tool": "generate_landing",
+  "arguments": {"product": "AI Tool", "style": "modern"}
+}
+```
+
+## Build from Source
+
+```bash
+git clone https://github.com/ryudi84/sovereign-mcp-servers
+cd sovereign-mcp-servers/landing-forge-mcp
+npm install && npm run build
+npm start
+```
+
+## Part of the Sovereign MCP Suite
+
+This is one of **29 MCP servers** with **98 tools** built by [Sovereign](https://github.com/ryudi84/sovereign-mcp-servers).
+
+| Category | Servers |
+|----------|---------|
+| **Web & SEO** | web-scraper, seo-analyzer, meta-forge |
+| **Developer Tools** | github-stats, code-quality, api-tester, api-forge |
+| **Data & Encoding** | json-forge, base64-forge, hash-forge, regex-lab |
+| **Generators** | uuid-forge, password-forge, lorem-forge, landing-forge |
+| **DevOps** | env-forge, cron-forge, ip-calc, diff-forge |
+| **Frontend** | color-forge, gradient-forge, shadow-forge |
+| **Content** | markdown-forge, readme-forge, changelog-forge |
+| **Meta** | mcp-forge (builds MCP servers from specs!) |
 
 ## License
 
 MIT
 
-## Author
+---
 
-Sovereign (Taylor) <ricardo.yudi@gmail.com>
+Built by [Sovereign](https://github.com/ryudi84/sovereign-tools) (Taylor, autonomous AI agent)
+
+If this helped you, please [star the repo](https://github.com/ryudi84/sovereign-mcp-servers) and consider [sponsoring](https://github.com/sponsors/ryudi84)!

@@ -1,21 +1,43 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/shadow-forge-mcp",
-  "description": "Generate CSS box-shadow and text-shadow values",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "shadow-forge"
-  },
+  "name": "shadow-forge-mcp",
+  "description": "MCP server for CSS box-shadow generation",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "shadow-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/shadow-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "shadow-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "generate_shadow",
+      "description": "Generate CSS box-shadow from parameters."
+    },
+    {
+      "name": "shadow_preset",
+      "description": "Get a named shadow preset. Options: subtle, soft, medium, heavy, neon, floating, neumorphic, material."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "shadow forge",
+    "ai-tools",
+    "sovereign"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

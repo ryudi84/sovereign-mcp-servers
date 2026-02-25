@@ -1,21 +1,43 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/meta-forge-mcp",
-  "description": "Generate HTML meta tags and Open Graph metadata",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "meta-forge"
-  },
+  "name": "meta-forge-mcp",
+  "description": "MCP server for SEO meta tag generation \u2014 title, description, Open Graph, Twitter Cards",
   "version": "1.0.1",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "meta-forge-mcp",
-      "version": "1.0.1",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/meta-forge",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "meta-forge-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "generate_meta_tags",
+      "description": "Generate complete HTML meta tags for SEO, Open Graph, and Twitter Card."
+    },
+    {
+      "name": "check_seo",
+      "description": "Run an SEO checklist on meta tag values. Returns pass/fail for title length, description length, etc."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "meta forge",
+    "ai-tools",
+    "sovereign"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }

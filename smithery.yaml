@@ -1,0 +1,148 @@
+# Smithery MCP Server Registry
+# https://smithery.ai
+
+servers:
+  - name: sovereign-api-forge-mcp
+    description: "MCP server for generating REST API boilerplate — Express endpoints, middleware, validation, error handling"
+    path: api-forge-mcp
+    command: npx -y sovereign-api-forge-mcp
+
+  - name: sovereign-api-tester-mcp
+    description: "MCP server for API testing — make HTTP requests, test endpoints, generate cURL commands, create mock responses, health checks. Postman in your IDE."
+    path: api-tester
+    command: npx -y sovereign-api-tester-mcp
+
+  - name: base64-forge-mcp
+    description: "MCP server for Base64, URL, and HTML encoding/decoding"
+    path: base64-forge
+    command: npx -y base64-forge-mcp
+
+  - name: changelog-forge-mcp
+    description: "MCP server for generating changelogs from conventional commits, parsing semver, and creating release notes."
+    path: changelog-forge
+    command: npx -y changelog-forge-mcp
+
+  - name: sovereign-code-quality-mcp
+    description: "MCP server for code quality analysis — cyclomatic complexity, duplicate detection, naming conventions, file metrics, refactoring suggestions."
+    path: code-quality
+    command: npx -y sovereign-code-quality-mcp
+
+  - name: color-forge-mcp
+    description: "MCP server for color palette generation and conversion — HEX, RGB, HSL"
+    path: color-forge
+    command: npx -y color-forge-mcp
+
+  - name: cron-forge-mcp
+    description: "MCP server for cron expression parsing, validation, human-readable explanation, and next run calculations."
+    path: cron-forge
+    command: npx -y cron-forge-mcp
+
+  - name: diff-forge-mcp
+    description: "MCP server for computing text diffs, comparing strings, and generating unified diff output."
+    path: diff-forge
+    command: npx -y diff-forge-mcp
+
+  - name: env-forge-mcp
+    description: "MCP server for .env file validation, parsing, comparison, and generation. Every project uses .env files."
+    path: env-forge
+    command: npx -y env-forge-mcp
+
+  - name: sovereign-github-stats-mcp
+    description: "MCP server for GitHub repository statistics — stars, forks, issues, PRs, languages, contributors, commit activity. No auth needed for public repos."
+    path: github-stats
+    command: npx -y sovereign-github-stats-mcp
+
+  - name: gradient-forge-mcp
+    description: "MCP server for CSS gradient generation — linear, radial, conic"
+    path: gradient-forge
+    command: npx -y gradient-forge-mcp
+
+  - name: hash-forge-mcp
+    description: "MCP server for cryptographic hashing — MD5, SHA-1, SHA-256, SHA-384, SHA-512"
+    path: hash-forge
+    command: npx -y hash-forge-mcp
+
+  - name: ip-calc-mcp
+    description: "MCP server for IP address calculations — subnet masks, CIDR notation, IP ranges, network analysis. Zero external deps."
+    path: ip-calc
+    command: npx -y ip-calc-mcp
+
+  - name: json-forge-mcp
+    description: "MCP server for JSON processing — format, validate, diff, convert, minify, query, analyze"
+    path: json-forge
+    command: npx -y json-forge-mcp
+
+  - name: jwt-forge-mcp
+    description: "MCP server for JWT decoding and inspection"
+    path: jwt-forge
+    command: npx -y jwt-forge-mcp
+
+  - name: landing-forge-mcp
+    description: "MCP server that generates complete, production-ready HTML landing pages, product cards, and pricing tables"
+    path: landing-forge-mcp
+    command: npx -y landing-forge-mcp
+
+  - name: lorem-forge-mcp
+    description: "MCP server for generating placeholder data — lorem ipsum, fake names, emails, addresses, phone numbers, company names. Zero external deps."
+    path: lorem-forge
+    command: npx -y lorem-forge-mcp
+
+  - name: markdown-forge-mcp
+    description: "MCP server for markdown processing — generate tables, TOC, convert to HTML, format badges, create link references."
+    path: markdown-forge
+    command: npx -y markdown-forge-mcp
+
+  - name: mcp-forge-mcp
+    description: "Meta MCP server that generates other MCP servers — the factory that builds factories"
+    path: mcp-forge-mcp
+    command: npx -y mcp-forge-mcp
+
+  - name: meta-forge-mcp
+    description: "MCP server for SEO meta tag generation — title, description, Open Graph, Twitter Cards"
+    path: meta-forge
+    command: npx -y meta-forge-mcp
+
+  - name: password-forge-mcp
+    description: "MCP server for generating secure passwords, passphrases, and checking password strength. Zero external deps."
+    path: password-forge
+    command: npx -y password-forge-mcp
+
+  - name: qr-text-forge-mcp
+    description: "MCP server for generating QR code data, encoding URLs, and creating vCard/WiFi/email QR payloads. Returns text-based QR representations."
+    path: qr-text-forge
+    command: npx -y qr-text-forge-mcp
+
+  - name: readme-forge-mcp
+    description: "MCP server for README.md generation from project metadata"
+    path: readme-forge
+    command: npx -y readme-forge-mcp
+
+  - name: regex-lab-mcp
+    description: "MCP server for regex testing, matching, replacing, and validation"
+    path: regex-lab
+    command: npx -y regex-lab-mcp
+
+  - name: sovereign-seo-analyzer-mcp
+    description: "MCP server for SEO analysis — check meta tags, heading hierarchy, link analysis, keyword density, robots.txt and sitemap generation."
+    path: seo-analyzer
+    command: npx -y sovereign-seo-analyzer-mcp
+
+  - name: shadow-forge-mcp
+    description: "MCP server for CSS box-shadow generation"
+    path: shadow-forge
+    command: npx -y shadow-forge-mcp
+
+  - name: timestamp-forge-mcp
+    description: "MCP server for timestamp conversion — Unix, ISO 8601, relative time"
+    path: timestamp-forge
+    command: npx -y timestamp-forge-mcp
+
+  - name: uuid-forge-mcp
+    description: "MCP server for generating UUIDs (v4, v7), ULIDs, nanoids, and random IDs. Every project needs unique identifiers."
+    path: uuid-forge
+    command: npx -y uuid-forge-mcp
+
+  - name: sovereign-web-scraper-mcp
+    description: "MCP server for web scraping — fetch URLs, extract text/links/metadata, CSS selector extraction. Zero deps, LLM-optimized output."
+    path: web-scraper
+    command: npx -y sovereign-web-scraper-mcp

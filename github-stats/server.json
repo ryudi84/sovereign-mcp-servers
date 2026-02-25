@@ -1,0 +1,63 @@
+{
+  "name": "sovereign-github-stats-mcp",
+  "description": "MCP server for GitHub repository statistics \u2014 stars, forks, issues, PRs, languages, contributors, commit activity. No auth needed for public repos.",
+  "version": "1.0.0",
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/github-stats",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sovereign-github-stats-mcp"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "repo_stats",
+      "description": "Get repository stats \u2014 stars, forks, open issues, watchers, size, license, topics."
+    },
+    {
+      "name": "contributor_stats",
+      "description": "Get top contributors for a repository."
+    },
+    {
+      "name": "release_info",
+      "description": "Get latest releases with download counts for a repository."
+    },
+    {
+      "name": "language_breakdown",
+      "description": "Get language breakdown (bytes and percentages) for a repository."
+    },
+    {
+      "name": "commit_activity",
+      "description": "Get weekly commit activity for the last year."
+    },
+    {
+      "name": "compare_repos",
+      "description": "Compare two GitHub repositories side by side."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "github stats",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ]
+}

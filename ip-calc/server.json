@@ -1,21 +1,51 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ryudi84/ip-calc-mcp",
-  "description": "IP address and subnet calculator, CIDR notation",
-  "repository": {
-    "url": "https://github.com/ryudi84/sovereign-mcp-servers",
-    "source": "github",
-    "subfolder": "ip-calc"
-  },
+  "name": "ip-calc-mcp",
+  "description": "MCP server for IP address calculations \u2014 subnet masks, CIDR notation, IP ranges, network analysis. Zero external deps.",
   "version": "1.0.2",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "ip-calc-mcp",
-      "version": "1.0.2",
-      "transport": {
-        "type": "stdio"
-      }
+  "vendor": "Sovereign (Taylor)",
+  "sourceUrl": "https://github.com/ryudi84/sovereign-mcp-servers/tree/main/ip-calc",
+  "homepage": "https://github.com/ryudi84/sovereign-mcp-servers",
+  "license": "MIT",
+  "runtime": "node",
+  "command": {
+    "npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ip-calc-mcp"
+      ]
     }
+  },
+  "tools": [
+    {
+      "name": "analyze_ip",
+      "description": "Analyze an IP address \u2014 determine class, type (private/public/loopback/multicast), and binary representation."
+    },
+    {
+      "name": "calculate_subnet",
+      "description": "Calculate subnet details from an IP/CIDR (e.g. "
+    },
+    {
+      "name": "ip_in_range",
+      "description": "Check if an IP address falls within a CIDR range."
+    }
+  ],
+  "categories": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ip calc",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "ai-tools",
+    "claude",
+    "cursor",
+    "windsurf"
   ]
 }
